@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wendy.mapper.UserMapper" >
+
+    <select id="findUser" resultType="User">
+        select * from user where username=#{username} and password=#{password};
+    </select>
+
+    <select id="findUsers" resultType="User">
+        select * from user;
+    </select>
+
+    <insert id="addUser">
+        insert into user values(null,#{username},#{password},#{isManager})
+    </insert>
+    <delete id="delUserById">
+        delete from user where userId=#{userId}
+    </delete>
+    <update id="alterUser">
+        update user set username=#{username},password=#{password},isManager=#{isManager} where userId=#{userId};
+    </update>
+
+</mapper>

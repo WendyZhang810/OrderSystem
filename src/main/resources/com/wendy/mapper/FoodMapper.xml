@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wendy.mapper.FoodMapper" >
+
+    <select id="getAll" resultType="Food">
+        select * from food;
+    </select>
+
+    <select id="getFoodByCatalogId" resultType="Food">
+        select * from food where catalog_id = #{catalogId};
+    </select>
+
+    <select id="getFoodByFoodId" resultType="Food">
+        select * from food where food_id = #{food_id};
+    </select>
+    <delete id="deleteFoodById">
+        delete from food where food_id = #{food_id};
+    </delete>
+    <update id="alterFood">
+        update food set catalog_id=#{catalog_id}, food_name=#{food_name}, food_price=#{food_price} where food_id=#{food_id};
+    </update>
+    <insert id="addNewFood">
+        insert into food values (null, #{catalog_id},#{food_name},#{food_price});
+    </insert>
+
+</mapper>

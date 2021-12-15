@@ -1,0 +1,19 @@
+body{
+    background-image: url("../images/img.png");
+    background-size:cover;
+}
+#adminLoginDiv{
+    color: aliceblue;
+    margin-top: 18%;
+    text-align: center;
+}
+#submit{
+    font-family: "Arial Rounded MT Bold";
+    font-size: smaller;
+    width: 70px;
+    height: 35px;
+}
+.input{
+    width: 160px;
+    height: 35px;
+}

@@ -1,0 +1,33 @@
+/*header div style*/
+#headerDiv{
+    margin-bottom: 10%;
+}
+/*footer div style*/
+
+/*grid system*/
+#gridContainer{
+    margin-left: 0%
+}
+/*catalog grid*/
+.col-3{
+    background-image: url("/images/backgroud.png");
+    position: fixed;
+    text-align: center;
+}
+.col-8{
+    margin-left: 30%;
+}
+
+/*catalog style*/
+#catalogUL{
+    align-content: center;
+    margin-bottom: 80%;
+}
+#welcome{
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+#nav-item{
+    margin-bottom: 10%;
+}
+
